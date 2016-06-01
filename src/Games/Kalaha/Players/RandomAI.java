@@ -35,10 +35,10 @@ public class RandomAI extends Player {
 	@Override
 	public Move pickMove(String avatar) {
 		ArrayList<Integer> possibleMoves = new ArrayList<>();
-		for (int i = 0; i < board.getLength(); ++i) {
+		for (int i = 0; i < board.getLength(); i++) {
 			if (board.getPlayer(i).equals(avatar) && !board.isKalaha(i) && board.getPieceAt(i) > 0) {
 				possibleMoves.add(i);
-			}
+			}			
 		}
 		int choice = randomizer.nextInt(possibleMoves.size());
 		return new Move(possibleMoves.get(choice));

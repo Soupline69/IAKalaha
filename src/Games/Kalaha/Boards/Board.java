@@ -60,6 +60,18 @@ public abstract class Board extends Path<Integer> {
 	protected Board(Board board) {
 		super(board);
 		this.avatars = board.avatars;
+		
+		/*setPieceAt(0, 5);
+		setPieceAt(1, 3);
+		setPieceAt(2, 0);
+		setPieceAt(3, 0);
+		setPieceAt(4, 0);
+		setPieceAt(5, 0);
+		setPieceAt(6, 0);
+		setPieceAt(7, 5);
+		setPieceAt(8, 6);
+		setPieceAt(9, 2);*/
+
 	}
 	
 	@Override

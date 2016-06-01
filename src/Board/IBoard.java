@@ -40,12 +40,12 @@ public interface IBoard<Piece, Coordinate> {
 	 * @param piece
 	 */
 	default public void setPieceAt(Coordinate coord, Piece piece) {
-		if (isReadOnly()) {
+		/*if (isReadOnly()) {
 			throw new ReadOnlyBoardException();
 		}
 		if (!has(coord)) {
 			throw new IllegalArgumentException();
-		}
+		}*/
 	}
 	
 	/**
